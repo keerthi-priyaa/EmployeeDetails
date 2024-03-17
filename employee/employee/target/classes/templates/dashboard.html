@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color:#D2691E;">
+
+    <!-- Brand -->
+    <a class="navbar-brand" th:href="@{/employees}">Dashboard</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class ="container">
+    <div style="margin-top: 10px" >
+        <div class = "col-lg-5">
+            <a th:href = "@{/employees/new}" class = "btn btn-primary btn-sm mb-3"> Add Employee</a>
+        </div>
+        <div class = "col-lg-5">
+            <a th:href = "@{/employees/list}" class = "btn btn-primary btn-sm mb-3"> Employees List</a>
+        </div>
+    </div>
+</div>
+<div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card" style="width:310px">
+    <img src="https://www.pngkit.com/png/detail/12-129685_sad-face-png.png" alt="emoji" style="width:300px;height:250px;" align="middle">
+        <p style="font-size:18px">
+            Forgot to add the details of Employees...Could you please do that for me!!
+        </p>
+</div>
+</table>
+</body>
+</html>
