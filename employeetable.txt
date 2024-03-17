@@ -1,0 +1,7 @@
+CREATE TABLE `data`.`employee1` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `dateofbirth` DATE NOT NULL,
+  `age` INT NOT NULL,
+  PRIMARY KEY (`id`));
